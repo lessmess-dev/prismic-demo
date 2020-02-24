@@ -2,6 +2,7 @@
 
 News feed with live updates demo.
 
+[Website](https://zeit.co/ilyalesik/prismic-demo/4s4satkid)
 [Backoffice](https://lesik-test.prismic.io/documents)
 
 Tech stack:
