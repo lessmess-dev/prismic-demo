@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    {
+      "src": "hook.js",
+      "use": "@now/node-server"
+    },
+    { "src": "package.json",
+      "use": "@now/static-build" }
+  ],
+  "env": {
+    "PUSHER_TOKEN": "2677bc76bf7f243c7177",
+    "PUSHER_SECRET": "@pusher-secret",
+    "PUSHER_APP_ID": "949941"
+  },
+  "build": {
+    "env": {
+      "PRISMIC_API_ENDPOINT": "https://lesik-test.prismic.io/api/v2",
+      "PUSHER_TOKEN": "2677bc76bf7f243c7177"
+    }
+  },
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/webhook",
+      "dest": "/hook.js"
+    },
+    { "src": "/", "dest": "public/$1" }
+  ]
+}

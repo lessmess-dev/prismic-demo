@@ -1,0 +1,35 @@
+{
+  "name": "prismic-demo",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --out-dir public"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "preact": "^10.3.2",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.5",
+    "pusher": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
