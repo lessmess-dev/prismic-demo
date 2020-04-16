@@ -16,3 +16,21 @@
 .news {
     padding: 20px;
 }
+
+.lang_button__block {
+    padding: 20px;
+}
+
+.lang_button {
+    background: peachpuff;
+    padding: 10px;
+    border: none;
+}
+
+.lang_button__active {
+    border: solid 1px black;
+}
+
+.lang_button + .lang_button {
+    margin-left: 20px;
+}
