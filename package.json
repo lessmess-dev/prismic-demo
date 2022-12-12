@@ -19,7 +19,7 @@
     }
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "preact": "^10.3.2",
     "prismic-dom": "^2.1.0",
     "prismic-javascript": "^2.1.5",
